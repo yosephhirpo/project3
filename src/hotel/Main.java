@@ -25,6 +25,10 @@ public class Main {
             try {
                 int choice = scanner.nextInt();
                 scanner.nextLine();
+            catch (InputMismatchException e) {
+    System.out.println("Invalid input! Please enter a valid whole number.");
+            }
+    
 
                 if (choice == 1) {
                     System.out.println("\n--- Current Room Status ---");
